@@ -56,6 +56,15 @@ Clean Python 3.12.14 environment:
 
 Test tolerances and physical formulas were not weakened or tuned.
 
+GitHub Actions verification:
+
+- main test/build/wheel-smoke and secret scan:
+  [run 43520224019](https://github.com/bpbq/lunar-influence-physics/actions/runs/43520224019), passed;
+- controlled DE421/DE440s comparison:
+  [run 43518209303](https://github.com/bpbq/lunar-influence-physics/actions/runs/43518209303), passed;
+- isolated ETERNA `IRIGID=1` comparison:
+  [run 43520225020](https://github.com/bpbq/lunar-influence-physics/actions/runs/43520225020), passed.
+
 ## Licence and provenance review
 
 - LIPE source: MIT.
@@ -89,7 +98,9 @@ DE421 remains the default; this is sensitivity, not absolute-accuracy evidence.
 The isolated modified PyGTide 0.9.7 build and four 30-day cases were rerun.
 Catalogue 8 RMS remained `0.047322–0.132579 nm/s²`; catalogue 7 remained
 `0.019479–0.037849 nm/s²`. One versus four unit groups under true `IRIGID=1`
-remained exactly invariant in saved output. No fit was applied.
+remained exactly invariant in saved output. The CI artifact contains four
+finite 2,880-sample series and 40,320 spectral rows. Its key metrics agree with
+the committed archive within `2.5×10⁻¹⁰`. No fit was applied.
 
 ## Remaining scientific limitations
 
@@ -106,11 +117,11 @@ remained exactly invariant in saved output. No fit was applied.
 
 - External services and compiler/package availability can change.
 - The selected validation cases do not span every supported time and location.
-- GitHub CI and both manual scientific workflows must be rerun after the owner
-  recreates the empty remote repository.
+- GitHub Actions currently reports non-failing notices about action runtime and
+  runner-image migrations; workflow results themselves passed.
 - Final tag, GitHub Release and public visibility require separate approval.
 
 ## Verdict
 
-`READY` to recreate the private repository and run independent GitHub checks.
-This verdict does not authorize a tag, GitHub Release, or visibility change.
+`READY` for final release review in the private repository. This verdict does
+not authorize a tag, GitHub Release, or visibility change.
