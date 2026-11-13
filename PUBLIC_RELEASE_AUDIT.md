@@ -8,8 +8,9 @@ Audit completed: 2026-11-14. Planned version: `0.2.0`. Planned tag:
 - Local source snapshot:
   `ed28d65fd5c788769af7621e5914bf1a44147373`.
 - The final tree was exported without `.git` into a separate working copy.
-- The new repository contains one root commit named
-  `Initial public research preview`, one branch `main`, and no tags.
+- The new repository starts with the root commit
+  `Initial public research preview`, followed by ordinary corrective commits;
+  it has one branch `main` and no tags.
 - The root commit SHA is obtained with `git rev-parse HEAD` and recorded in the
   handoff. A commit cannot embed its own cryptographic SHA in its contents.
 
