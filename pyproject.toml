@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lunar-influence-physics"
+version = "0.2.0"
+description = "Reproducible lunar and solar astronomy and Newtonian tidal physics"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {text = "MIT"}
+dependencies = [
+  "numpy==2.5.4",
+  "pandas==3.1.1",
+  "skyfield==1.55",
+  "skyfield-data==7.0.0",
+]
+
+[project.optional-dependencies]
+parquet = ["pyarrow==26.0.1"]
+plots = ["matplotlib==3.11.2"]
+test = ["pytest==9.2.0", "pytest-cov==7.1.0"]
+validation = ["pygtide==0.9.7"]
+
+[project.scripts]
+lunar-physics = "lunar_physics.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lunar_physics"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

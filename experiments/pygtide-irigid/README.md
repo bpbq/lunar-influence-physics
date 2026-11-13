@@ -1,0 +1,38 @@
+# Experimental ETERNA `IRIGID=1` comparison
+
+This optional experiment exposes the existing ETERNA PREDICT v3.4 `IRIGID`
+switch in an isolated build of PyGTide 0.9.7. It does not modify LIPE, does not
+modify an installed PyGTide, and is not an upstream PyGTide feature.
+
+The patch is MPL-2.0-covered source-form material. Upstream source is fixed at:
+
+- repository: `https://github.com/hydrogeoscience/pygtide.git`;
+- tag: `v0.9.7`;
+- commit: `e2587918bbeba27bd3464da1002396393856cd03`.
+
+## Build and execute
+
+On Debian/Ubuntu with Python 3.12, Git, a Fortran compiler, Meson and Ninja:
+
+```bash
+experiments/pygtide-irigid/build_and_run.sh /tmp/lipe-pygtide-irigid
+```
+
+The script clones the exact commit, verifies it and all bundled ETERNA input
+files against `UPSTREAM_SHA256SUMS`, applies the repository patch, builds in
+that temporary checkout and invokes the diagnostic generator through an
+explicit `PYTHONPATH`. It refuses an ordinary extension without
+`setirigid()`. Standard PyGTide remains untouched.
+
+Archived direct outputs are in `validation/pygtide_residuals_v2`: four complete
+30-day, 15-minute series; signed residuals; metrics; pairwise correlations; and
+spectra. No scale, offset, lag, phase or physical coefficient was fitted.
+
+In the archived execution, true `IRIGID=1` catalogue 8 gave LIPE−ETERNA RMS
+0.047–0.133 nm/s²; catalogue 7 gave 0.019–0.038 nm/s². One versus four unit
+wavegroups became exactly invariant. Run the script again before describing the
+numbers as reverified in a new environment. They were reverified in the public
+release preparation environment on 2026-11-13 with Python 3.12.14, Meson 1.9.1
+and GNU Fortran 14.2.0; public CI remains an independent execution.
+
+See `docs/PYGTIDE_IRIGID_INVESTIGATION.md` for definitions and interpretation.

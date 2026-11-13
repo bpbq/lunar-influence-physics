@@ -1,0 +1,489 @@
+{
+  "status": "CONTROLLED_EPHEMERIS_SENSITIVITY_NOT_ABSOLUTE_ACCURACY",
+  "generated_utc": "2026-11-13T22:14:26.694701+00:00",
+  "ephemerides": {
+    "baseline": "de421.bsp",
+    "baseline_sha256": "a20a7139da04cbc462454634918e9a9ca69127044e2cc9d4f9c16e238d2deedc",
+    "candidate": "de440s.bsp",
+    "candidate_sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2",
+    "candidate_bytes": 32726016,
+    "candidate_source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp"
+  },
+  "controls": {
+    "same_timescale_for_both": true,
+    "timescale_mode": "builtin_snapshot",
+    "timescale_sha256": "c7d7536d898dfa9f8cd43e8044ff51e108cc8289675a13fee9822010a1c4935c",
+    "WGS84_same": true,
+    "GM_values_same": true,
+    "tidal_acceleration_formula_same": true,
+    "local_geodetic_up_same": true,
+    "fitted_scale_phase_lag_offset": false,
+    "step_minutes": 15,
+    "window_days": 30,
+    "delta_sign": "DE440s minus DE421",
+    "metric_units": {
+      "distance_m": "metres",
+      "vertical_nm_s2": "nm/s^2",
+      "total_vector_magnitude_nm_s2": "nm/s^2",
+      "peak_time_shift": "seconds"
+    }
+  },
+  "cases": {
+    "seattle_2016": {
+      "latitude_deg": 47.6062,
+      "longitude_deg": -122.3321,
+      "elevation_m_ellipsoidal": 56.0,
+      "start_utc": "2016-01-22T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.20929461552037132,
+          "rms": 0.2207084905113965,
+          "max_absolute": 0.32792651653289795,
+          "p95_absolute": 0.325524166226387
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": -1.8731302336923083e-07,
+          "rms": 3.1054854087551444e-06,
+          "max_absolute": 6.890109943924472e-06,
+          "p95_absolute": 5.595736227803623e-06
+        },
+        "sun_distance_m": {
+          "mean_signed": 1.0886686113145616,
+          "rms": 1.14271641645418,
+          "max_absolute": 1.602691650390625,
+          "p95_absolute": 1.5553115844726562
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": 1.1508525925352255e-07,
+          "rms": 5.044170688544218e-07,
+          "max_absolute": 1.0528706866352877e-06,
+          "p95_absolute": 9.286060024926712e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": -7.222776249589699e-08,
+          "rms": 3.284583715596233e-06,
+          "max_absolute": 7.3395288495703426e-06,
+          "p95_absolute": 6.087230812568121e-06
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.1469292448514542e-06,
+          "rms": 2.2624920027029627e-06,
+          "max_absolute": 5.642437145070289e-06,
+          "p95_absolute": 4.660489901198161e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 7.929629646241665e-05,
+          "median_absolute_seconds": 7.51987099647522e-05
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 55,
+          "max_absolute_seconds": 0.00021973252296447754,
+          "median_absolute_seconds": 5.71301206946373e-05
+        }
+      }
+    },
+    "leticia_2016": {
+      "latitude_deg": -4.21528,
+      "longitude_deg": -69.94056,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2016-04-06T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.2196665554617842,
+          "rms": 0.23530957346286163,
+          "max_absolute": 0.3541586995124817,
+          "p95_absolute": 0.35118184685707093
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": 3.465485709980673e-07,
+          "rms": 6.224532681186513e-06,
+          "max_absolute": 1.2962789355697169e-05,
+          "p95_absolute": 1.0823152338446104e-05
+        },
+        "sun_distance_m": {
+          "mean_signed": 1.9696493042839898,
+          "rms": 1.9786155080860586,
+          "max_absolute": 2.30499267578125,
+          "p95_absolute": 2.2822662353515626
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": 1.1833763293111646e-07,
+          "rms": 4.37765030616519e-07,
+          "max_absolute": 8.297772637888556e-07,
+          "p95_absolute": 7.208210647036138e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": 4.648862008582413e-07,
+          "rms": 6.276205494772616e-06,
+          "max_absolute": 1.3759801959167817e-05,
+          "p95_absolute": 1.1141853545382218e-05
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.465699112301877e-06,
+          "rms": 3.987162131423493e-06,
+          "max_absolute": 9.09334289644903e-06,
+          "p95_absolute": 7.525070432734532e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 8.415331831201911e-05,
+          "median_absolute_seconds": 7.38052767701447e-05
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.00014746352098882198,
+          "median_absolute_seconds": 6.376502278726548e-05
+        }
+      }
+    },
+    "sydney_2016": {
+      "latitude_deg": -33.8688,
+      "longitude_deg": 151.2093,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2016-07-18T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.224776406151553,
+          "rms": 0.23314074377973792,
+          "max_absolute": 0.31071585416793823,
+          "p95_absolute": 0.30578955113887785
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": 2.098633389218029e-08,
+          "rms": 4.379784263890191e-06,
+          "max_absolute": 9.433908019218507e-06,
+          "p95_absolute": 7.527407749119419e-06
+        },
+        "sun_distance_m": {
+          "mean_signed": -1.3513775083753798,
+          "rms": 1.3786638456736398,
+          "max_absolute": 1.82525634765625,
+          "p95_absolute": 1.7903274536132812
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": -1.1809951044584491e-08,
+          "rms": 4.2914432235607057e-07,
+          "max_absolute": 9.082834822038421e-07,
+          "p95_absolute": 7.853375684874209e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": 9.176383081958146e-09,
+          "rms": 4.476527475071382e-06,
+          "max_absolute": 9.665494644650607e-06,
+          "p95_absolute": 7.791024175674008e-06
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.2824546376855039e-06,
+          "rms": 2.9289221634781137e-06,
+          "max_absolute": 8.067829298852303e-06,
+          "p95_absolute": 5.853199854755075e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 8.307141251862049e-05,
+          "median_absolute_seconds": 7.483933586627245e-05
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.00017656851559877396,
+          "median_absolute_seconds": 6.41094520688057e-05
+        }
+      }
+    },
+    "tromso_2016": {
+      "latitude_deg": 69.6492,
+      "longitude_deg": 18.9553,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2016-10-29T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.21134498653312525,
+          "rms": 0.22980720566852628,
+          "max_absolute": 0.36598706245422363,
+          "p95_absolute": 0.3627242177724838
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": -4.624744412097691e-07,
+          "rms": 1.4591964063163433e-06,
+          "max_absolute": 3.998932584181603e-06,
+          "p95_absolute": 2.76105213572464e-06
+        },
+        "sun_distance_m": {
+          "mean_signed": -1.11248869366116,
+          "rms": 1.1296920214877975,
+          "max_absolute": 1.39300537109375,
+          "p95_absolute": 1.3644805908203124
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": -2.1374311231001355e-07,
+          "rms": 2.9068683380419597e-07,
+          "max_absolute": 6.427756886751013e-07,
+          "p95_absolute": 5.605781912443316e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": -6.762175506753662e-07,
+          "rms": 1.593883125190032e-06,
+          "max_absolute": 3.833302400835237e-06,
+          "p95_absolute": 3.023708029559202e-06
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 9.807995119280754e-07,
+          "rms": 1.4803648163572509e-06,
+          "max_absolute": 4.557972943075583e-06,
+          "p95_absolute": 3.030743596355021e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.00011445884592831135,
+          "median_absolute_seconds": 7.377320434898138e-05
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 43,
+          "max_absolute_seconds": 0.0003702528774738312,
+          "median_absolute_seconds": 6.580841727554798e-05
+        }
+      }
+    },
+    "seattle_2024": {
+      "latitude_deg": 47.6062,
+      "longitude_deg": -122.3321,
+      "elevation_m_ellipsoidal": 56.0,
+      "start_utc": "2024-02-29T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.22168068854759138,
+          "rms": 0.26891534138285894,
+          "max_absolute": 0.4704410433769226,
+          "p95_absolute": 0.4648465275764465
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": -2.071817787312114e-07,
+          "rms": 5.86825921569326e-06,
+          "max_absolute": 1.5695364510293075e-05,
+          "p95_absolute": 1.1559257535509456e-05
+        },
+        "sun_distance_m": {
+          "mean_signed": -0.05801325903998481,
+          "rms": 0.08378838347591741,
+          "max_absolute": 0.135009765625,
+          "p95_absolute": 0.13433837890625
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": 1.91638276673517e-08,
+          "rms": 6.443564942180526e-07,
+          "max_absolute": 1.0877243283857752e-06,
+          "p95_absolute": 1.0212010939980586e-06
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": -1.8801794970177652e-07,
+          "rms": 5.97678773479442e-06,
+          "max_absolute": 1.5657188043860515e-05,
+          "p95_absolute": 1.1758529484495738e-05
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.2080523673753241e-06,
+          "rms": 3.627071043533995e-06,
+          "max_absolute": 1.0271762221236713e-05,
+          "p95_absolute": 7.535932746804972e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.0001433035358786583,
+          "median_absolute_seconds": 0.00012618221808224916
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 50,
+          "max_absolute_seconds": 0.0002327233087271452,
+          "median_absolute_seconds": 9.114708518609405e-05
+        }
+      }
+    },
+    "leticia_2024": {
+      "latitude_deg": -4.21528,
+      "longitude_deg": -69.94056,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2024-04-06T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.21756516430113051,
+          "rms": 0.2550867439558429,
+          "max_absolute": 0.3935418725013733,
+          "p95_absolute": 0.39023286402225493
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": 4.2114215456462973e-07,
+          "rms": 9.633588312096514e-06,
+          "max_absolute": 1.9853145658998983e-05,
+          "p95_absolute": 1.686158598630527e-05
+        },
+        "sun_distance_m": {
+          "mean_signed": -0.0882290416293674,
+          "rms": 0.10212632434402463,
+          "max_absolute": 0.15240478515625,
+          "p95_absolute": 0.1517333984375
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": 1.2660583923007926e-07,
+          "rms": 4.248524315010962e-07,
+          "max_absolute": 8.172414425189345e-07,
+          "p95_absolute": 7.155062803576582e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": 5.477479955363135e-07,
+          "rms": 9.674978271814458e-06,
+          "max_absolute": 2.0427603431016905e-05,
+          "p95_absolute": 1.7159918419906718e-05
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.5259257032829154e-06,
+          "rms": 6.425617638444471e-06,
+          "max_absolute": 1.475480962653819e-05,
+          "p95_absolute": 1.2370482124879345e-05
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.00014542078133672476,
+          "median_absolute_seconds": 0.00012503447942435741
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.00035090919118374586,
+          "median_absolute_seconds": 9.896134724840522e-05
+        }
+      }
+    },
+    "sydney_2024": {
+      "latitude_deg": -33.8688,
+      "longitude_deg": 151.2093,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2024-07-18T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.23079335449470414,
+          "rms": 0.2651739741280703,
+          "max_absolute": 0.45096248388290405,
+          "p95_absolute": 0.4420976430177688
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": 3.4031961148109356e-08,
+          "rms": 7.501508679117905e-06,
+          "max_absolute": 1.7161807420507103e-05,
+          "p95_absolute": 1.4122237112701438e-05
+        },
+        "sun_distance_m": {
+          "mean_signed": -0.5735694355434842,
+          "rms": 0.5833170195825265,
+          "max_absolute": 0.786102294921875,
+          "p95_absolute": 0.7723159790039062
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": -1.221588394018571e-08,
+          "rms": 4.304305721134074e-07,
+          "max_absolute": 8.982377153188281e-07,
+          "p95_absolute": 7.858590976184132e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": 2.1816072920631072e-08,
+          "rms": 7.555759512781268e-06,
+          "max_absolute": 1.711013862859545e-05,
+          "p95_absolute": 1.4172293830938534e-05
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 1.383221725416285e-06,
+          "rms": 4.848085051795855e-06,
+          "max_absolute": 1.272142662855913e-05,
+          "p95_absolute": 1.0301274315338558e-05
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 58,
+          "max_absolute_seconds": 0.0001448045950382948,
+          "median_absolute_seconds": 0.00012786936713382602
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 55,
+          "max_absolute_seconds": 0.0003053416730836034,
+          "median_absolute_seconds": 0.00010276283137500286
+        }
+      }
+    },
+    "tromso_2024": {
+      "latitude_deg": 69.6492,
+      "longitude_deg": 18.9553,
+      "elevation_m_ellipsoidal": 0.0,
+      "start_utc": "2024-10-29T00:00:00Z",
+      "samples": 2880,
+      "difference_metrics": {
+        "moon_distance_m": {
+          "mean_signed": -0.21289127202083666,
+          "rms": 0.2565979032064944,
+          "max_absolute": 0.43455541133880615,
+          "p95_absolute": 0.4301317632198334
+        },
+        "moon_vertical_nm_s2": {
+          "mean_signed": -5.728209003711311e-07,
+          "rms": 3.3299564959611475e-06,
+          "max_absolute": 9.586583558984785e-06,
+          "p95_absolute": 6.968575775445626e-06
+        },
+        "sun_distance_m": {
+          "mean_signed": -0.5434028625488281,
+          "rms": 0.551811571349492,
+          "max_absolute": 0.62841796875,
+          "p95_absolute": 0.62774658203125
+        },
+        "sun_vertical_nm_s2": {
+          "mean_signed": -2.2046475010921034e-07,
+          "rms": 2.988461465162931e-07,
+          "max_absolute": 6.566835750732025e-07,
+          "p95_absolute": 5.718981100244491e-07
+        },
+        "total_vertical_nm_s2": {
+          "mean_signed": -7.932856521432426e-07,
+          "rms": 3.3887338197006066e-06,
+          "max_absolute": 9.344780295350574e-06,
+          "p95_absolute": 7.223608112383317e-06
+        },
+        "total_vector_magnitude_nm_s2": {
+          "mean_signed": 9.714530343608708e-07,
+          "rms": 2.5327328094388412e-06,
+          "max_absolute": 8.545614832655701e-06,
+          "p95_absolute": 5.342000906694009e-06
+        }
+      },
+      "peak_time_shift": {
+        "moon_vertical_nm_s2": {
+          "matched_peaks": 45,
+          "max_absolute_seconds": 0.0003413890954107046,
+          "median_absolute_seconds": 0.00011981232091784477
+        },
+        "total_vertical_nm_s2": {
+          "matched_peaks": 38,
+          "max_absolute_seconds": 0.00031110947020351887,
+          "median_absolute_seconds": 0.00010699941776692867
+        }
+      }
+    }
+  }
+}

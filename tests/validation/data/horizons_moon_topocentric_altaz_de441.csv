@@ -1,0 +1,17 @@
+scenario,latitude_deg,longitude_deg,elevation_m,time_utc,reference_azimuth_deg,reference_altitude_deg,reference_ephemeris,reference_observable
+seattle_winter,47.6062,-122.3321,56.0,2016-01-22T00:00:00Z,71.915185048,7.413015320,DE441,airless_apparent_topocentric
+seattle_winter,47.6062,-122.3321,56.0,2016-01-22T01:00:00Z,82.112737481,16.917504586,DE441,airless_apparent_topocentric
+seattle_winter,47.6062,-122.3321,56.0,2016-01-22T02:00:00Z,92.636089443,26.685892365,DE441,airless_apparent_topocentric
+seattle_winter,47.6062,-122.3321,56.0,2016-01-22T03:00:00Z,104.256419175,36.382783298,DE441,airless_apparent_topocentric
+leticia_spring,-4.21528,-69.94056,0.0,2016-04-06T00:00:00Z,264.091045354,-38.949058026,DE441,airless_apparent_topocentric
+leticia_spring,-4.21528,-69.94056,0.0,2016-04-06T01:00:00Z,261.458255842,-53.091912990,DE441,airless_apparent_topocentric
+leticia_spring,-4.21528,-69.94056,0.0,2016-04-06T02:00:00Z,255.937659870,-67.058995827,DE441,airless_apparent_topocentric
+leticia_spring,-4.21528,-69.94056,0.0,2016-04-06T03:00:00Z,235.444270520,-80.248008285,DE441,airless_apparent_topocentric
+sydney_winter,-33.8688,151.2093,0.0,2016-07-18T00:00:00Z,186.000381043,-38.083053020,DE441,airless_apparent_topocentric
+sydney_winter,-33.8688,151.2093,0.0,2016-07-18T01:00:00Z,168.785812777,-37.533363779,DE441,airless_apparent_topocentric
+sydney_winter,-33.8688,151.2093,0.0,2016-07-18T02:00:00Z,152.763146354,-33.588258868,DE441,airless_apparent_topocentric
+sydney_winter,-33.8688,151.2093,0.0,2016-07-18T03:00:00Z,139.026850333,-26.879217224,DE441,airless_apparent_topocentric
+tromso_autumn,69.6492,18.9553,0.0,2016-10-29T00:00:00Z,42.613190316,-20.195570478,DE441,airless_apparent_topocentric
+tromso_autumn,69.6492,18.9553,0.0,2016-10-29T01:00:00Z,57.347205555,-16.492789857,DE441,airless_apparent_topocentric
+tromso_autumn,69.6492,18.9553,0.0,2016-10-29T02:00:00Z,71.583495435,-12.096917799,DE441,airless_apparent_topocentric
+tromso_autumn,69.6492,18.9553,0.0,2016-10-29T03:00:00Z,85.459025088,-7.302800226,DE441,airless_apparent_topocentric

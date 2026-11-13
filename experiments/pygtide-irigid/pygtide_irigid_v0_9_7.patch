@@ -1,0 +1,42 @@
+# Experimental modification of PyGTide/ETERNA PREDICT source.
+# Upstream: PyGTide v0.9.7, e2587918bbeba27bd3464da1002396393856cd03
+# Licence: Mozilla Public License 2.0; see ../../licenses/MPL-2.0.txt.
+diff --git a/src/etpred.f90 b/src/etpred.f90
+index 82546eb..a5cbee2 100755
+--- a/src/etpred.f90
++++ b/src/etpred.f90
+@@ -325,6 +325,8 @@ module INOUT
+     use MAX_PARS
+     ! Python handover arguments controlling the Fortran program
+     REAL(8), DIMENSION(18) :: ARGSIN
++    ! EXPERIMENTAL DIAGNOSTIC ONLY: expose ETERNA's original IRIGID switch.
++    REAL(8) :: IRIGIDIN = 0.D0
+     ! The data storage container read out by Python
+     REAL(8), DIMENSION(:, :), ALLOCATABLE :: ETPDATA
+     ! Wave groups parameters
+@@ -408,6 +410,16 @@ subroutine INIT
+ END SUBROUTINE
+ ! ##################################################################
+
++! EXPERIMENTAL DIAGNOSTIC ONLY; not part of upstream PyGTide 0.9.7.
++SUBROUTINE SETIRIGID(N)
++    use INOUT
++    INTEGER, INTENT(IN) :: N
++    IF (N.NE.0 .AND. N.NE.1) STOP 'IRIGID must be 0 or 1'
++    IRIGIDIN = DBLE(N)
++END SUBROUTINE
++
++! ##################################################################
++
+ ! ##################################################################
+ !-GCR this is to hand over the wave group parameters
+ SUBROUTINE WAVES(FREQFROM, FREQTO, AMPFAC, PHASEFAC, N)
+@@ -1491,7 +1503,7 @@ SUBROUTINE PREDIN(IUN16,IPRINT)
+       DLODTC=1.16D0
+       ITH=0
+       IMODEL=8
+-      IRIGID=0
++      IRIGID=IRIGIDIN
+ !      REWIND IUN15
+ !#######################################################################
+ !     Read control record:

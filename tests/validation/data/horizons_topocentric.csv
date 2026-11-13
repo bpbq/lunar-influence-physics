@@ -1,0 +1,4 @@
+case,target,time_scale,time_value,latitude_deg,longitude_deg,elevation_m,reference_x_au,reference_y_au,reference_z_au,reference_azimuth_deg,reference_altitude_deg
+boston_moon,moon,TDB,2015-03-02T00:00:00,42.3566944444,-71.0568888889,0,-0.001341501206552443,0.002190483327459023,0.0006839177007993498,,
+flagstaff_mars_1,mars,UTC,2021-02-03T00:00:00Z,35.1844866,-111.6527,2106.9128,,,,131.8839,65.2758
+flagstaff_mars_2,mars,UTC,2021-02-04T00:00:00Z,35.1844866,-111.6527,2106.9128,,,,132.4246,65.6790

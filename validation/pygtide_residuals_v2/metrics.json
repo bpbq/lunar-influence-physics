@@ -1,0 +1,587 @@
+{
+  "provenance": {
+    "pygtide_version": "0.9.7",
+    "pygtide_source_commit": "e2587918bbeba27bd3464da1002396393856cd03",
+    "experimental_patch": "experiments/pygtide-irigid/pygtide_irigid_v0_9_7.patch",
+    "pygtide_module": "isolated experimental build; local path omitted",
+    "samples": 2880,
+    "step_seconds": 900,
+    "duration_days": 30,
+    "pygtide_tidal_component": 0,
+    "pygtide_amtruncate": 1e-10,
+    "pole_tide_correction": 0.0,
+    "lod_tide_correction": 0.0,
+    "vertical_sign": "LIPE geodetic up; PyGTide gravity negated from down to up",
+    "fitting": "none; no scale, offset, phase, or lag was fitted"
+  },
+  "sites": {
+    "seattle": {
+      "coordinates": {
+        "lat": 47.6062,
+        "lon": -122.3321,
+        "elevation_m": 56.0
+      },
+      "start_utc": "2016-01-22T00:00:00Z",
+      "comparisons": {
+        "lipe_minus_pygtide_default_irigid0_cat8": {
+          "bias_nm_s2": 6.612773458680757,
+          "rms_nm_s2": 9.875894972833592,
+          "centered_rms_nm_s2": 7.335157032988943,
+          "max_abs_nm_s2": 26.4455773658741,
+          "correlation": 0.9999557415088762
+        },
+        "lipe_minus_pygtide_four_unit_bands_irigid0_cat8": {
+          "bias_nm_s2": -0.015912385285502425,
+          "rms_nm_s2": 3.7145619061095956,
+          "centered_rms_nm_s2": 3.7145278233330106,
+          "max_abs_nm_s2": 7.794327928811981,
+          "correlation": 0.999975705881417
+        },
+        "lipe_minus_pygtide_true_irigid1_cat8": {
+          "bias_nm_s2": 0.0002967636547969677,
+          "rms_nm_s2": 0.07241324794487329,
+          "centered_rms_nm_s2": 0.0724126398445664,
+          "max_abs_nm_s2": 0.18013019565995592,
+          "correlation": 0.9999999872080159
+        },
+        "lipe_minus_pygtide_true_irigid1_four_bands_cat8": {
+          "bias_nm_s2": 0.0002967636547969677,
+          "rms_nm_s2": 0.07241324794487329,
+          "centered_rms_nm_s2": 0.0724126398445664,
+          "max_abs_nm_s2": 0.18013019565995592,
+          "correlation": 0.9999999872080159
+        },
+        "lipe_minus_pygtide_true_irigid1_cat7": {
+          "bias_nm_s2": 0.00021491159995312427,
+          "rms_nm_s2": 0.026004543359977483,
+          "centered_rms_nm_s2": 0.026003655288538853,
+          "max_abs_nm_s2": 0.06014612851271295,
+          "correlation": 0.9999999983504921
+        },
+        "lipe_minus_lipe_geocentric_radial": {
+          "bias_nm_s2": -1.6757130937800147,
+          "rms_nm_s2": 1.982515051596356,
+          "centered_rms_nm_s2": 1.0594109481878664,
+          "max_abs_nm_s2": 4.217725652480112,
+          "correlation": 0.9999985023734058
+        },
+        "lipe_minus_lipe_eterna_ellipsoid": {
+          "bias_nm_s2": -2.8564836468818564e-05,
+          "rms_nm_s2": 5.7611471600298284e-05,
+          "centered_rms_nm_s2": 5.003130797272473e-05,
+          "max_abs_nm_s2": 0.00011048595183638099,
+          "correlation": 0.9999999999999999
+        }
+      },
+      "irigid_group_invariance_max_abs_nm_s2": 0.0,
+      "pairwise_correlations": {
+        "lipe_newtonian": {
+          "lipe_newtonian": 0.9999999999999999,
+          "pygtide_default_irigid0_cat8": 0.9999557415088762,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.999975705881417,
+          "pygtide_true_irigid1_cat8": 0.9999999872080159,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999872080159,
+          "pygtide_true_irigid1_cat7": 0.9999999983504921,
+          "lipe_geocentric_radial": 0.9999985023734058,
+          "lipe_eterna_ellipsoid": 0.9999999999999999
+        },
+        "pygtide_default_irigid0_cat8": {
+          "lipe_newtonian": 0.9999557415088762,
+          "pygtide_default_irigid0_cat8": 1.0,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999415291406317,
+          "pygtide_true_irigid1_cat8": 0.9999555148532017,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999555148532017,
+          "pygtide_true_irigid1_cat7": 0.9999557023902917,
+          "lipe_geocentric_radial": 0.9999654451235763,
+          "lipe_eterna_ellipsoid": 0.9999557415407591
+        },
+        "pygtide_four_unit_bands_irigid0_cat8": {
+          "lipe_newtonian": 0.999975705881417,
+          "pygtide_default_irigid0_cat8": 0.9999415291406316,
+          "pygtide_four_unit_bands_irigid0_cat8": 1.0,
+          "pygtide_true_irigid1_cat8": 0.9999754621534853,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999754621534853,
+          "pygtide_true_irigid1_cat7": 0.9999756540103683,
+          "lipe_geocentric_radial": 0.9999685898826168,
+          "lipe_eterna_ellipsoid": 0.999975705869394
+        },
+        "pygtide_true_irigid1_cat8": {
+          "lipe_newtonian": 0.9999999872080159,
+          "pygtide_default_irigid0_cat8": 0.9999555148532018,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999754621534853,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999887336464,
+          "lipe_geocentric_radial": 0.9999984897408809,
+          "lipe_eterna_ellipsoid": 0.9999999872079175
+        },
+        "pygtide_true_irigid1_four_bands_cat8": {
+          "lipe_newtonian": 0.9999999872080159,
+          "pygtide_default_irigid0_cat8": 0.9999555148532018,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999754621534853,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999887336464,
+          "lipe_geocentric_radial": 0.9999984897408809,
+          "lipe_eterna_ellipsoid": 0.9999999872079175
+        },
+        "pygtide_true_irigid1_cat7": {
+          "lipe_newtonian": 0.9999999983504921,
+          "pygtide_default_irigid0_cat8": 0.9999557023902916,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999756540103684,
+          "pygtide_true_irigid1_cat8": 0.9999999887336463,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999887336463,
+          "pygtide_true_irigid1_cat7": 0.9999999999999999,
+          "lipe_geocentric_radial": 0.9999985011847661,
+          "lipe_eterna_ellipsoid": 0.9999999983503964
+        },
+        "lipe_geocentric_radial": {
+          "lipe_newtonian": 0.9999985023734059,
+          "pygtide_default_irigid0_cat8": 0.9999654451235764,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999685898826168,
+          "pygtide_true_irigid1_cat8": 0.9999984897408809,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999984897408809,
+          "pygtide_true_irigid1_cat7": 0.9999985011847661,
+          "lipe_geocentric_radial": 1.0,
+          "lipe_eterna_ellipsoid": 0.9999985023812735
+        },
+        "lipe_eterna_ellipsoid": {
+          "lipe_newtonian": 0.9999999999999999,
+          "pygtide_default_irigid0_cat8": 0.9999557415407591,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.999975705869394,
+          "pygtide_true_irigid1_cat8": 0.9999999872079176,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999872079176,
+          "pygtide_true_irigid1_cat7": 0.9999999983503963,
+          "lipe_geocentric_radial": 0.9999985023812734,
+          "lipe_eterna_ellipsoid": 1.0
+        }
+      }
+    },
+    "leticia": {
+      "coordinates": {
+        "lat": -4.21528,
+        "lon": -69.94056,
+        "elevation_m": 0.0
+      },
+      "start_utc": "2016-04-06T00:00:00Z",
+      "comparisons": {
+        "lipe_minus_pygtide_default_irigid0_cat8": {
+          "bias_nm_s2": 1.9541398219332353,
+          "rms_nm_s2": 2.3364316398289082,
+          "centered_rms_nm_s2": 1.2807225944475038,
+          "max_abs_nm_s2": 5.128955645349151,
+          "correlation": 0.9999980133841768
+        },
+        "lipe_minus_pygtide_four_unit_bands_irigid0_cat8": {
+          "bias_nm_s2": 0.004518164373930232,
+          "rms_nm_s2": 0.6796582454604402,
+          "centered_rms_nm_s2": 0.6796432275930174,
+          "max_abs_nm_s2": 1.8451849234709243,
+          "correlation": 0.9999994389715422
+        },
+        "lipe_minus_pygtide_true_irigid1_cat8": {
+          "bias_nm_s2": -0.000806637819102936,
+          "rms_nm_s2": 0.1325785539028963,
+          "centered_rms_nm_s2": 0.13257609999699033,
+          "max_abs_nm_s2": 0.3258904417572239,
+          "correlation": 0.999999978639994
+        },
+        "lipe_minus_pygtide_true_irigid1_four_bands_cat8": {
+          "bias_nm_s2": -0.000806637819102936,
+          "rms_nm_s2": 0.1325785539028963,
+          "centered_rms_nm_s2": 0.13257609999699033,
+          "max_abs_nm_s2": 0.3258904417572239,
+          "correlation": 0.999999978639994
+        },
+        "lipe_minus_pygtide_true_irigid1_cat7": {
+          "bias_nm_s2": -0.0008362838178254111,
+          "rms_nm_s2": 0.02429605743897644,
+          "centered_rms_nm_s2": 0.024281660496228135,
+          "max_abs_nm_s2": 0.05981096788036666,
+          "correlation": 0.999999999283908
+        },
+        "lipe_minus_lipe_geocentric_radial": {
+          "bias_nm_s2": -0.03901458805871505,
+          "rms_nm_s2": 0.1498395841254238,
+          "centered_rms_nm_s2": 0.14467122343261193,
+          "max_abs_nm_s2": 0.374919373329476,
+          "correlation": 0.9999999748651873
+        },
+        "lipe_minus_lipe_eterna_ellipsoid": {
+          "bias_nm_s2": 3.775933280439961e-05,
+          "rms_nm_s2": 7.991387626565741e-05,
+          "centered_rms_nm_s2": 7.043053603352309e-05,
+          "max_abs_nm_s2": 0.0002054204851447139,
+          "correlation": 0.9999999999999998
+        }
+      },
+      "irigid_group_invariance_max_abs_nm_s2": 0.0,
+      "pairwise_correlations": {
+        "lipe_newtonian": {
+          "lipe_newtonian": 1.0,
+          "pygtide_default_irigid0_cat8": 0.9999980133841768,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999994389715422,
+          "pygtide_true_irigid1_cat8": 0.999999978639994,
+          "pygtide_true_irigid1_four_bands_cat8": 0.999999978639994,
+          "pygtide_true_irigid1_cat7": 0.999999999283908,
+          "lipe_geocentric_radial": 0.9999999748651873,
+          "lipe_eterna_ellipsoid": 0.9999999999999998
+        },
+        "pygtide_default_irigid0_cat8": {
+          "lipe_newtonian": 0.9999980133841768,
+          "pygtide_default_irigid0_cat8": 0.9999999999999998,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999979790597224,
+          "pygtide_true_irigid1_cat8": 0.9999980145391839,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999980145391839,
+          "pygtide_true_irigid1_cat7": 0.9999979920994846,
+          "lipe_geocentric_radial": 0.9999981856306563,
+          "lipe_eterna_ellipsoid": 0.999998013388109
+        },
+        "pygtide_four_unit_bands_irigid0_cat8": {
+          "lipe_newtonian": 0.9999994389715422,
+          "pygtide_default_irigid0_cat8": 0.9999979790597224,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999999999999998,
+          "pygtide_true_irigid1_cat8": 0.999999438477772,
+          "pygtide_true_irigid1_four_bands_cat8": 0.999999438477772,
+          "pygtide_true_irigid1_cat7": 0.9999994164285667,
+          "lipe_geocentric_radial": 0.9999993052428482,
+          "lipe_eterna_ellipsoid": 0.9999994389718732
+        },
+        "pygtide_true_irigid1_cat8": {
+          "lipe_newtonian": 0.999999978639994,
+          "pygtide_default_irigid0_cat8": 0.999998014539184,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999994384777718,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999797876341,
+          "lipe_geocentric_radial": 0.9999999545030103,
+          "lipe_eterna_ellipsoid": 0.9999999786399599
+        },
+        "pygtide_true_irigid1_four_bands_cat8": {
+          "lipe_newtonian": 0.999999978639994,
+          "pygtide_default_irigid0_cat8": 0.999998014539184,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999994384777718,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999797876341,
+          "lipe_geocentric_radial": 0.9999999545030103,
+          "lipe_eterna_ellipsoid": 0.9999999786399599
+        },
+        "pygtide_true_irigid1_cat7": {
+          "lipe_newtonian": 0.9999999992839079,
+          "pygtide_default_irigid0_cat8": 0.9999979920994847,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999994164285665,
+          "pygtide_true_irigid1_cat8": 0.9999999797876341,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999797876341,
+          "pygtide_true_irigid1_cat7": 1.0,
+          "lipe_geocentric_radial": 0.9999999751758138,
+          "lipe_eterna_ellipsoid": 0.9999999992838738
+        },
+        "lipe_geocentric_radial": {
+          "lipe_newtonian": 0.9999999748651872,
+          "pygtide_default_irigid0_cat8": 0.9999981856306565,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999993052428483,
+          "pygtide_true_irigid1_cat8": 0.9999999545030104,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999545030104,
+          "pygtide_true_irigid1_cat7": 0.999999975175814,
+          "lipe_geocentric_radial": 1.0,
+          "lipe_eterna_ellipsoid": 0.9999999748652961
+        },
+        "lipe_eterna_ellipsoid": {
+          "lipe_newtonian": 0.9999999999999998,
+          "pygtide_default_irigid0_cat8": 0.999998013388109,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999994389718732,
+          "pygtide_true_irigid1_cat8": 0.99999997863996,
+          "pygtide_true_irigid1_four_bands_cat8": 0.99999997863996,
+          "pygtide_true_irigid1_cat7": 0.9999999992838738,
+          "lipe_geocentric_radial": 0.9999999748652961,
+          "lipe_eterna_ellipsoid": 1.0
+        }
+      }
+    },
+    "sydney": {
+      "coordinates": {
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "elevation_m": 0.0
+      },
+      "start_utc": "2016-07-18T00:00:00Z",
+      "comparisons": {
+        "lipe_minus_pygtide_default_irigid0_cat8": {
+          "bias_nm_s2": 1.2967433989821484,
+          "rms_nm_s2": 5.932517148484373,
+          "centered_rms_nm_s2": 5.789060051014964,
+          "max_abs_nm_s2": 11.80039291215735,
+          "correlation": 0.9999597441261507
+        },
+        "lipe_minus_pygtide_four_unit_bands_irigid0_cat8": {
+          "bias_nm_s2": -0.018497238859361075,
+          "rms_nm_s2": 3.4524620819827025,
+          "centered_rms_nm_s2": 3.4524125303449638,
+          "max_abs_nm_s2": 7.114125943576269,
+          "correlation": 0.9999825308199504
+        },
+        "lipe_minus_pygtide_true_irigid1_cat8": {
+          "bias_nm_s2": -0.0013930082862266787,
+          "rms_nm_s2": 0.09269830813600087,
+          "centered_rms_nm_s2": 0.0926878409457868,
+          "max_abs_nm_s2": 0.21341789681395085,
+          "correlation": 0.9999999850022652
+        },
+        "lipe_minus_pygtide_true_irigid1_four_bands_cat8": {
+          "bias_nm_s2": -0.0013930082862266787,
+          "rms_nm_s2": 0.09269830813600087,
+          "centered_rms_nm_s2": 0.0926878409457868,
+          "max_abs_nm_s2": 0.21341789681395085,
+          "correlation": 0.9999999850022652
+        },
+        "lipe_minus_pygtide_true_irigid1_cat7": {
+          "bias_nm_s2": -0.0013241041952213794,
+          "rms_nm_s2": 0.019479403035847623,
+          "centered_rms_nm_s2": 0.019434348219407482,
+          "max_abs_nm_s2": 0.035687203906903164,
+          "correlation": 0.9999999993406857
+        },
+        "lipe_minus_lipe_geocentric_radial": {
+          "bias_nm_s2": -1.3660340974910707,
+          "rms_nm_s2": 1.6772593571682008,
+          "centered_rms_nm_s2": 0.9732162122057162,
+          "max_abs_nm_s2": 3.725215326890492,
+          "correlation": 0.9999986155179704
+        },
+        "lipe_minus_lipe_eterna_ellipsoid": {
+          "bias_nm_s2": -1.081254882718725e-06,
+          "rms_nm_s2": 5.926629810211468e-05,
+          "centered_rms_nm_s2": 5.925643406928331e-05,
+          "max_abs_nm_s2": 0.00015692127976763004,
+          "correlation": 1.0
+        }
+      },
+      "irigid_group_invariance_max_abs_nm_s2": 0.0,
+      "pairwise_correlations": {
+        "lipe_newtonian": {
+          "lipe_newtonian": 0.9999999999999998,
+          "pygtide_default_irigid0_cat8": 0.9999597441261507,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999825308199504,
+          "pygtide_true_irigid1_cat8": 0.9999999850022652,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999850022652,
+          "pygtide_true_irigid1_cat7": 0.9999999993406857,
+          "lipe_geocentric_radial": 0.9999986155179704,
+          "lipe_eterna_ellipsoid": 1.0
+        },
+        "pygtide_default_irigid0_cat8": {
+          "lipe_newtonian": 0.9999597441261507,
+          "pygtide_default_irigid0_cat8": 0.9999999999999998,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999433341982749,
+          "pygtide_true_irigid1_cat8": 0.9999596073776442,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999596073776442,
+          "pygtide_true_irigid1_cat7": 0.9999597318848127,
+          "lipe_geocentric_radial": 0.9999705824152499,
+          "lipe_eterna_ellipsoid": 0.9999597441612623
+        },
+        "pygtide_four_unit_bands_irigid0_cat8": {
+          "lipe_newtonian": 0.9999825308199503,
+          "pygtide_default_irigid0_cat8": 0.9999433341982749,
+          "pygtide_four_unit_bands_irigid0_cat8": 1.0,
+          "pygtide_true_irigid1_cat8": 0.9999824017532379,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999824017532379,
+          "pygtide_true_irigid1_cat7": 0.9999825251831655,
+          "lipe_geocentric_radial": 0.9999759794729918,
+          "lipe_eterna_ellipsoid": 0.9999825308072929
+        },
+        "pygtide_true_irigid1_cat8": {
+          "lipe_newtonian": 0.9999999850022653,
+          "pygtide_default_irigid0_cat8": 0.9999596073776442,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999824017532378,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999855959019,
+          "lipe_geocentric_radial": 0.9999985969106276,
+          "lipe_eterna_ellipsoid": 0.9999999850022233
+        },
+        "pygtide_true_irigid1_four_bands_cat8": {
+          "lipe_newtonian": 0.9999999850022653,
+          "pygtide_default_irigid0_cat8": 0.9999596073776442,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999824017532378,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999855959019,
+          "lipe_geocentric_radial": 0.9999985969106276,
+          "lipe_eterna_ellipsoid": 0.9999999850022233
+        },
+        "pygtide_true_irigid1_cat7": {
+          "lipe_newtonian": 0.9999999993406856,
+          "pygtide_default_irigid0_cat8": 0.9999597318848127,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999825251831654,
+          "pygtide_true_irigid1_cat8": 0.9999999855959019,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999855959019,
+          "pygtide_true_irigid1_cat7": 1.0,
+          "lipe_geocentric_radial": 0.9999986117375155,
+          "lipe_eterna_ellipsoid": 0.9999999993406454
+        },
+        "lipe_geocentric_radial": {
+          "lipe_newtonian": 0.9999986155179704,
+          "pygtide_default_irigid0_cat8": 0.9999705824152499,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999759794729917,
+          "pygtide_true_irigid1_cat8": 0.9999985969106276,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999985969106276,
+          "pygtide_true_irigid1_cat7": 0.9999986117375156,
+          "lipe_geocentric_radial": 1.0,
+          "lipe_eterna_ellipsoid": 0.9999986155254769
+        },
+        "lipe_eterna_ellipsoid": {
+          "lipe_newtonian": 1.0,
+          "pygtide_default_irigid0_cat8": 0.9999597441612621,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999825308072929,
+          "pygtide_true_irigid1_cat8": 0.9999999850022233,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999850022233,
+          "pygtide_true_irigid1_cat7": 0.9999999993406455,
+          "lipe_geocentric_radial": 0.9999986155254769,
+          "lipe_eterna_ellipsoid": 1.0
+        }
+      }
+    },
+    "tromso": {
+      "coordinates": {
+        "lat": 69.6492,
+        "lon": 18.9553,
+        "elevation_m": 0.0
+      },
+      "start_utc": "2016-10-29T00:00:00Z",
+      "comparisons": {
+        "lipe_minus_pygtide_default_irigid0_cat8": {
+          "bias_nm_s2": 0.016359764262772834,
+          "rms_nm_s2": 4.797655343790586,
+          "centered_rms_nm_s2": 4.797627450721412,
+          "max_abs_nm_s2": 8.21545218134436,
+          "correlation": 0.9999523651182342
+        },
+        "lipe_minus_pygtide_four_unit_bands_irigid0_cat8": {
+          "bias_nm_s2": 0.0035678570669163256,
+          "rms_nm_s2": 2.5965840900985904,
+          "centered_rms_nm_s2": 2.596581638876212,
+          "max_abs_nm_s2": 6.654003531531785,
+          "correlation": 0.9999655580529309
+        },
+        "lipe_minus_pygtide_true_irigid1_cat8": {
+          "bias_nm_s2": 0.0012080270831038328,
+          "rms_nm_s2": 0.047322370569742325,
+          "centered_rms_nm_s2": 0.04730694903401088,
+          "max_abs_nm_s2": 0.14043355273372526,
+          "correlation": 0.9999999830154871
+        },
+        "lipe_minus_pygtide_true_irigid1_four_bands_cat8": {
+          "bias_nm_s2": 0.0012080270831038328,
+          "rms_nm_s2": 0.047322370569742325,
+          "centered_rms_nm_s2": 0.04730694903401088,
+          "max_abs_nm_s2": 0.14043355273372526,
+          "correlation": 0.9999999830154871
+        },
+        "lipe_minus_pygtide_true_irigid1_cat7": {
+          "bias_nm_s2": 0.0007023648004845846,
+          "rms_nm_s2": 0.037848586184423126,
+          "centered_rms_nm_s2": 0.03784206865178945,
+          "max_abs_nm_s2": 0.08504916533279072,
+          "correlation": 0.9999999891509634
+        },
+        "lipe_minus_lipe_geocentric_radial": {
+          "bias_nm_s2": -0.7026904073802116,
+          "rms_nm_s2": 1.0258050977808082,
+          "centered_rms_nm_s2": 0.747330107789674,
+          "max_abs_nm_s2": 2.991618002302701,
+          "correlation": 0.9999989550014478
+        },
+        "lipe_minus_lipe_eterna_ellipsoid": {
+          "bias_nm_s2": -6.448584061584476e-05,
+          "rms_nm_s2": 7.049488197969074e-05,
+          "centered_rms_nm_s2": 2.8479900726624613e-05,
+          "max_abs_nm_s2": 0.00011113364348602772,
+          "correlation": 1.0
+        }
+      },
+      "irigid_group_invariance_max_abs_nm_s2": 0.0,
+      "pairwise_correlations": {
+        "lipe_newtonian": {
+          "lipe_newtonian": 1.0,
+          "pygtide_default_irigid0_cat8": 0.9999523651182342,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999655580529309,
+          "pygtide_true_irigid1_cat8": 0.9999999830154871,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999830154871,
+          "pygtide_true_irigid1_cat7": 0.9999999891509634,
+          "lipe_geocentric_radial": 0.9999989550014478,
+          "lipe_eterna_ellipsoid": 1.0
+        },
+        "pygtide_default_irigid0_cat8": {
+          "lipe_newtonian": 0.9999523651182342,
+          "pygtide_default_irigid0_cat8": 0.9999999999999999,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999601854294804,
+          "pygtide_true_irigid1_cat8": 0.9999524802745502,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999524802745502,
+          "pygtide_true_irigid1_cat7": 0.9999521854259947,
+          "lipe_geocentric_radial": 0.9999509050589439,
+          "lipe_eterna_ellipsoid": 0.9999523651215212
+        },
+        "pygtide_four_unit_bands_irigid0_cat8": {
+          "lipe_newtonian": 0.9999655580529306,
+          "pygtide_default_irigid0_cat8": 0.9999601854294804,
+          "pygtide_four_unit_bands_irigid0_cat8": 1.0,
+          "pygtide_true_irigid1_cat8": 0.9999653781096993,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999653781096993,
+          "pygtide_true_irigid1_cat7": 0.9999650974697526,
+          "lipe_geocentric_radial": 0.9999652036838078,
+          "lipe_eterna_ellipsoid": 0.9999655580674344
+        },
+        "pygtide_true_irigid1_cat8": {
+          "lipe_newtonian": 0.9999999830154872,
+          "pygtide_default_irigid0_cat8": 0.9999524802745502,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999653781096994,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999939005021,
+          "lipe_geocentric_radial": 0.9999988829923949,
+          "lipe_eterna_ellipsoid": 0.9999999830147598
+        },
+        "pygtide_true_irigid1_four_bands_cat8": {
+          "lipe_newtonian": 0.9999999830154872,
+          "pygtide_default_irigid0_cat8": 0.9999524802745502,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999653781096994,
+          "pygtide_true_irigid1_cat8": 1.0,
+          "pygtide_true_irigid1_four_bands_cat8": 1.0,
+          "pygtide_true_irigid1_cat7": 0.9999999939005021,
+          "lipe_geocentric_radial": 0.9999988829923949,
+          "lipe_eterna_ellipsoid": 0.9999999830147598
+        },
+        "pygtide_true_irigid1_cat7": {
+          "lipe_newtonian": 0.9999999891509632,
+          "pygtide_default_irigid0_cat8": 0.9999521854259948,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999650974697526,
+          "pygtide_true_irigid1_cat8": 0.9999999939005022,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999939005022,
+          "pygtide_true_irigid1_cat7": 0.9999999999999998,
+          "lipe_geocentric_radial": 0.9999988908365091,
+          "lipe_eterna_ellipsoid": 0.9999999891502461
+        },
+        "lipe_geocentric_radial": {
+          "lipe_newtonian": 0.9999989550014478,
+          "pygtide_default_irigid0_cat8": 0.9999509050589439,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999652036838079,
+          "pygtide_true_irigid1_cat8": 0.999998882992395,
+          "pygtide_true_irigid1_four_bands_cat8": 0.999998882992395,
+          "pygtide_true_irigid1_cat7": 0.9999988908365092,
+          "lipe_geocentric_radial": 1.0,
+          "lipe_eterna_ellipsoid": 0.9999989550083358
+        },
+        "lipe_eterna_ellipsoid": {
+          "lipe_newtonian": 1.0,
+          "pygtide_default_irigid0_cat8": 0.9999523651215213,
+          "pygtide_four_unit_bands_irigid0_cat8": 0.9999655580674343,
+          "pygtide_true_irigid1_cat8": 0.9999999830147599,
+          "pygtide_true_irigid1_four_bands_cat8": 0.9999999830147599,
+          "pygtide_true_irigid1_cat7": 0.9999999891502461,
+          "lipe_geocentric_radial": 0.9999989550083358,
+          "lipe_eterna_ellipsoid": 0.9999999999999998
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+name: DE440s controlled physics comparison
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  de440s-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install pinned environment
+        run: |
+          python -m pip install -r requirements/validation.lock
+          python -m pip install --no-deps -e .
+      - name: Obtain and verify official JPL DE440s kernel
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .cache/de440
+          curl --fail --location --retry 3 --connect-timeout 30 \
+            "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp" \
+            --output .cache/de440/de440s.bsp
+          echo "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2  .cache/de440/de440s.bsp" | sha256sum --check
+          test "$(stat -c %s .cache/de440/de440s.bsp)" -eq 32726016
+      - name: Compute controlled DE421 vs DE440s differences
+        run: |
+          python scripts/compare_de421_de440s.py \
+            --de440s-path .cache/de440/de440s.bsp \
+            --output artifacts/de440s_comparison.json
+          python - <<'PY'
+          import json
+          data = json.load(open("artifacts/de440s_comparison.json"))
+          print("\\nSummary: DE440s minus DE421, no fitted parameters")
+          for name, case in data["cases"].items():
+              m = case["difference_metrics"]
+              print(name, "total tidal max Δ [nm/s²]:", m["total_vertical_nm_s2"]["max_absolute"],
+                    "lunar distance max Δ [m]:", m["moon_distance_m"]["max_absolute"],
+                    "lunar tide RMS Δ [nm/s²]:", m["moon_vertical_nm_s2"]["rms"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lipe-de440s-vs-de421
+          path: artifacts/de440s_comparison.json
+          if-no-files-found: error

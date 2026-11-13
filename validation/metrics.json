@@ -1,0 +1,191 @@
+{
+  "generated_utc": "2026-11-13T14:14:15.262126+00:00",
+  "horizons": {
+    "boston_moon_vector_m": {
+      "max_absolute": 8.969208257189488,
+      "mean_signed": 0.41929232034173075,
+      "n": 3,
+      "rms": 6.528791968233892
+    },
+    "flagstaff_altitude_deg": {
+      "max_absolute": 4.385336545453811e-05,
+      "mean_signed": 4.2393206307167475e-05,
+      "n": 2,
+      "rms": 4.241834515557761e-05
+    },
+    "flagstaff_azimuth_deg": {
+      "max_absolute": 6.211426165236844e-05,
+      "mean_signed": 3.92298073990105e-05,
+      "n": 2,
+      "rms": 4.5416693352086865e-05
+    },
+    "illuminated_fraction": {
+      "max_absolute": 6.22335991723455e-05,
+      "mean_signed": -3.958285897264794e-05,
+      "n": 10,
+      "rms": 4.577459016411726e-05
+    },
+    "moon_topocentric_airless_apparent_altitude_deg": {
+      "max_absolute": 8.380754057224493e-05,
+      "mean_signed": -1.4364491426221981e-05,
+      "n": 16,
+      "rms": 4.1371300494143377e-05
+    },
+    "moon_topocentric_airless_apparent_azimuth_deg": {
+      "max_absolute": 0.0002502007373834658,
+      "mean_signed": -3.513559559387147e-05,
+      "n": 16,
+      "rms": 0.0001246201470328809
+    },
+    "phase_angle_deg": {
+      "max_absolute": 0.005562090802172293,
+      "mean_signed": 0.004251546779435955,
+      "n": 10,
+      "rms": 0.005235954603970737
+    }
+  },
+  "moonshiner_1_2_0": {
+    "all_cases": {
+      "max_absolute": 0.017354354083592483,
+      "mean_signed": -0.0028974433894553716,
+      "n": 103,
+      "rms": 0.005458199896140562
+    },
+    "end_to_end_all_cases": {
+      "altitude_deg": {
+        "max_absolute": 2.2143576233735405,
+        "mean_signed": -0.7223387269017013,
+        "n": 103,
+        "rms": 1.111567556874473
+      },
+      "distance_km": {
+        "max_absolute": 6990.767294187739,
+        "mean_signed": -2131.012090904157,
+        "n": 103,
+        "rms": 3696.223869382147
+      },
+      "lux": {
+        "max_absolute": 0.01628212004898802,
+        "mean_signed": -0.003753119057957756,
+        "n": 103,
+        "rms": 0.0062604682780310105
+      },
+      "phase_angle_deg": {
+        "max_absolute": 1.6125841602862714,
+        "mean_signed": 0.025452020287515555,
+        "n": 103,
+        "rms": 0.9715549637598561
+      }
+    },
+    "leticia_spring": {
+      "max_absolute": 3.149713038954572e-05,
+      "mean_signed": -9.247180824794049e-06,
+      "n": 26,
+      "rms": 1.3689150045306536e-05
+    },
+    "seattle_winter": {
+      "max_absolute": 0.011481255997239814,
+      "mean_signed": -0.003908054117569311,
+      "n": 30,
+      "rms": 0.005687027610839116
+    },
+    "sydney_winter": {
+      "max_absolute": 0.017354354083592483,
+      "mean_signed": -0.006462663298488043,
+      "n": 28,
+      "rms": 0.008656741973199964
+    },
+    "tromso_autumn": {
+      "max_absolute": 4.967009184681127e-07,
+      "mean_signed": -2.448827060167372e-09,
+      "n": 19,
+      "rms": 2.0505299545505605e-07
+    }
+  },
+  "pygtide_0_9_7": {
+    "leticia_spring": {
+      "correlation": 0.999998013384177,
+      "dominant_residual_frequencies_cycles_per_day": [
+        {
+          "amplitude_nm_s2": 1.1990323948485768,
+          "frequency": 2.9
+        },
+        {
+          "amplitude_nm_s2": 1.073404316725638,
+          "frequency": 1.0
+        },
+        {
+          "amplitude_nm_s2": 0.5598040483824267,
+          "frequency": 0.9666666666666667
+        }
+      ],
+      "max_absolute": 5.128955645349151,
+      "mean_signed": 1.9541398219332353,
+      "n": 2880,
+      "rms": 2.3364316398289082
+    },
+    "seattle_winter": {
+      "correlation": 0.9999557415088762,
+      "dominant_residual_frequencies_cycles_per_day": [
+        {
+          "amplitude_nm_s2": 7.8351683955321585,
+          "frequency": 1.9333333333333333
+        },
+        {
+          "amplitude_nm_s2": 4.451632031900237,
+          "frequency": 0.9333333333333333
+        },
+        {
+          "amplitude_nm_s2": 3.8490521997336526,
+          "frequency": 2.0
+        }
+      ],
+      "max_absolute": 26.4455773658741,
+      "mean_signed": 6.612773458680757,
+      "n": 2880,
+      "rms": 9.875894972833592
+    },
+    "sydney_winter": {
+      "correlation": 0.9999597441261507,
+      "dominant_residual_frequencies_cycles_per_day": [
+        {
+          "amplitude_nm_s2": 7.996733530685204,
+          "frequency": 1.0
+        },
+        {
+          "amplitude_nm_s2": 1.0241574938757325,
+          "frequency": 0.9333333333333333
+        },
+        {
+          "amplitude_nm_s2": 0.6687983951144247,
+          "frequency": 2.9
+        }
+      ],
+      "max_absolute": 11.80039291215735,
+      "mean_signed": 1.2967433989821484,
+      "n": 2880,
+      "rms": 5.932517148484373
+    },
+    "tromso_autumn": {
+      "correlation": 0.9999523651182344,
+      "dominant_residual_frequencies_cycles_per_day": [
+        {
+          "amplitude_nm_s2": 6.560199473895366,
+          "frequency": 1.0
+        },
+        {
+          "amplitude_nm_s2": 0.9166849774294125,
+          "frequency": 0.9333333333333333
+        },
+        {
+          "amplitude_nm_s2": 0.7887758232964506,
+          "frequency": 0.9666666666666667
+        }
+      ],
+      "max_absolute": 8.21545218134436,
+      "mean_signed": 0.016359764262772834,
+      "n": 2880,
+      "rms": 4.797655343790586
+    }
+  }
+}

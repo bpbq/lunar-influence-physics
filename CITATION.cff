@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use LIPE, cite the software and the exact version used."
+title: "Lunar Influence Physics Engine"
+type: software
+version: 0.2.0
+license: MIT
+repository-code: "https://github.com/bpbq/lunar-influence-physics"
+url: "https://github.com/bpbq/lunar-influence-physics"
+authors:
+  - name: "LIPE contributors"
+keywords:
+  - lunar tide
+  - solar tide
+  - astronomy
+  - reproducible research
+abstract: >-
+  Reproducible Python calculations of lunar and solar astronomy, Newtonian
+  differential tidal acceleration, and approximate outdoor lunar illuminance.
